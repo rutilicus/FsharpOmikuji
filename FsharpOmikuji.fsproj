@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net46</TargetFramework> 
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="xaml\ResultWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="xaml\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Compile Include="source\CommonType.fs" />
+    <Compile Include="source\ResultWindow.fs" />
+    <Compile Include="source\MainWindow.fs" />
+    <Compile Include="source\Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+</Project>
